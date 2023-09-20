@@ -12,7 +12,7 @@ function searchNew(e) {
     // hasil.innerHTML = `<h3>${nilai}</h3><form onsubmit="submitNew(event)"><button>Next</button></form>`;
 
     hasil.draggable = true;
-    hasil.id = "hasil" + Date.now();
+    hasil.id = Date.now();
 
     hasil.ondragstart = dragStart;
 
