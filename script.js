@@ -24,12 +24,10 @@ function searchNew(e) {
 
 function dragStart(e) {
     e.dataTransfer.setData("text", e.target.id);
-    console.log(e);
 }
 
 function allowDrop(e) {
     e.preventDefault();
-    console.log(e);
 }
 
 function dropStart(e) {
