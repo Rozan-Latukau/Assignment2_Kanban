@@ -12,7 +12,7 @@ function searchNew(e) {
     // hasil.innerHTML = `<h3>${nilai}</h3><form onsubmit="submitNew(event)"><button>Next</button></form>`;
 
     hasil.draggable = true;
-    hasil.id = "hasil-dragdrop"
+    hasil.id = "hasil-dragdrop" + Date.now();
 
     hasil.ondragstart = dragStart;
 
@@ -41,6 +41,7 @@ function dropStart(e) {
         const dragdrop = document.getElementById("review");
         dragdrop.appendChild(document.getElementById(data));
     }
+    console.log(e);
 }
 
 function drop(e) {
@@ -49,9 +50,10 @@ function drop(e) {
     const target = e.target;
 
     if (target.classList.contains("box")) {
-        const dragdrop = document.getElementById("progress");
-        dragdrop.appendChild(document.getElementById(data1));
+        const dragdrop1 = document.getElementById("progress");
+        dragdrop1.appendChild(document.getElementById(data1));
     }
+    console.log(e);
 }
 
 function dropToDone(e) {
@@ -60,7 +62,8 @@ function dropToDone(e) {
     const target = e.target;
 
     if (target.classList.contains("box")) {
-        const dragdrop = document.getElementById("done");
-        dragdrop.appendChild(document.getElementById(data2));
+        const dragdrop2 = document.getElementById("done");
+        dragdrop2.appendChild(document.getElementById(data2));
     }
+    console.log(e);
 }
