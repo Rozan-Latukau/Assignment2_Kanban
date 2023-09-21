@@ -4,10 +4,11 @@
 }
 
 body {
+    background-color: #001C30;
     font-family: sans-serif;
-    background-image: url(Assets/download.jpeg);
+    /* background-image: url(Assets/download.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .container {
